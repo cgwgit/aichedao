@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>我要加盟_爱车岛</title>
+<link href="{dede:global.cfg_templets_skin/}/style/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+{dede:include filename="nav.htm"/}
+		<div class="ejm_banner">
+			<div class="jm_banner"></div>
+		</div>
+        <div class="con">
+		<div class="nleft">
+        	<h3>新闻资讯</h3>
+            <ul>
+            	<li><a href="#">公司新闻</a></li>
+                <li><a href="#">行业新闻</a></li>
+                <li><a href="#">最新资讯</a></li>
+            </ul>
+            <h3>联系我们</h3>
+            <ul class="nlx">
+            	<li>青岛爱车岛汽车服务有限公司</li>
+                <li>电话：0532-66089111</li>
+                <li><p>地址：<br/>青岛市李沧区九水东路320号</p></li>
+                <li>邮箱：qdaichedao@163.com</li>
+            </ul>
+        </div>
+        <div class="nright">
+        	<div class="weizhi">首页 >> <a href="#">新闻资讯</a></div>
+            <ul class="nlist">
+			  {dede:list pagesize='15'}
+            	<li><a href="[field:arcurl/]"><span>[field:pubdate function="GetDateMK(@me)"/]</span>[field:title/]</a></li>
+			  {/dede:list}
+            </ul>
+            <div class="fenye">
+			
+			{dede:pagelist listsize='5' listitem='info,index,end,pre,next,pageno'/}
+			
+			</div>
+        </div>
+        
+        <div class="c"></div>
+        </div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

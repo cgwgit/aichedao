@@ -1,0 +1,1 @@
+<a href='{dede:field name='typeurl'/}' class="{dede:field.typeid runphp='yes'} if(@me=='30' )@me = 'hover';{/dede:field.typeid}">{dede:field name='typename'/}</a>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_cmsurl/}/favicon.ico" rel="shortcut icon" />
+<link href="{dede:global.cfg_templets_skin/}/style/main.css" type="text/css" rel="stylesheet" />
+<link href="{dede:global.cfg_templets_skin/}/style/top.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery1.42.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="content">
+	<div class="y_n_l">
+    	{dede:include filename="left.htm"/}
+    </div>
+    <div class="y_n_r">
+    	<div class="y_wz" id="y_wzn">
+        	{dede:field name='position'/}
+        </div>
+        <ul class="y_dt_list">
+        	{dede:list pagesize='15' }
+        	<li>
+            <a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:title/]"/></a>
+            <div class="list_r">
+                <h3>[field:title/]</h3>
+                <p>[field:description/]...</p>
+                <div class="cl"><a href="[field:arcurl/]" class="more">MORE INFO</a> <span class="list_lm"><img src="../images/08050854_10.gif" alt=""/> [field:typelink/]</span> <span><img src="../images/08050854_15.gif" alt=""/> [field:click/] </span><span><img src="../images/08050854_12.gif" alt=""/> [field:pubdate function="GetDateMK(@me)"/]</span></div>
+            </div>
+            </li>
+            {/dede:list}
+        </ul>
+        <div class="pagination-wrapper">
+            <div class="pagination">
+            {dede:pagelist listsize='5' listitem='info,index,end,pre,next,pageno'/}
+            </div>
+        </div>
+    </div>
+    <div class="c"></div>
+</div>
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

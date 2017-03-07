@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>帝豪娱乐会所_青岛怡元设计有限公司</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=no,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<link href="/yiyuandesign/templets/wap/style/index.css" type="text/css" rel="stylesheet" />
+<link href="/yiyuandesign/templets/wap/style/m-reset.css" type="text/css" rel="stylesheet" />
+<link href="/yiyuandesign/templets/wap/style/m-top.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/yiyuandesign/templets/wap/style/m_main.css" />
+<link type="text/css" href="/yiyuandesign/templets/wap/style/style.css" rel="stylesheet"/>
+<script type="text/javascript" src="/yiyuandesign/templets/wap/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/yiyuandesign/templets/wap/js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="/yiyuandesign/templets/wap/js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".main_visualt").hover(function(){
+		$("#btn_prev,#btn_next").fadeIn()
+	},function(){
+		$("#btn_prev,#btn_next").fadeOut()
+	});
+	
+	$dragBln = false;
+	
+	$(".main_imaget").touchSlider({
+		flexible : true,
+		speed : 200,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".flicking_con a"),
+		counter : function (e){
+			$(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+		}
+	});
+	
+	$(".main_imaget").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_imaget").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_imaget a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next").click();
+	}, 5000);
+	
+	$(".main_visualt").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		},5000);
+	});
+	
+	$(".main_image").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		}, 5000);
+	});
+	
+});
+</script>
+</head>
+<body>
+	<header>
+		<div class="h_logo">
+			<img src="/yiyuandesign/templets/wap/images/index_06.jpg"  /> 
+		</div>
+		<div class="h_text">
+			<p>中国设计50强获奖企业</p>
+			<p>青岛最具影响力装饰设计企业</p>
+		</div>
+	</header>
+	<div class="c"></div>
+	<div class="e-menu"></div>
+	<div class="menu">
+		<ul>
+			<Li><a href="/yiyuandesign/wap/index.html"><span>首页</span></a></Li>
+			<Li><a href="/yiyuandesign/wap/case/off_s_d"><span>设计案例</span></a></Li>
+			<Li><a href="/yiyuandesign/wap/affiliate"><span>加盟合作</span></a></Li>
+			<Li><a href="/yiyuandesign/wap/about"><span>关于怡元</span></a></Li>
+			<Li><a href="/yiyuandesign/wap/news"><span>新闻资讯</span></a></Li>
+		</ul>
+	</div>
+
+<!-- banner 开始-->
+	<div class="i_banner">
+		<img src="/yiyuandesign/templets/wap/images/index_3_8_12.jpg" />
+	</div>
+	<div class="c"></div>
+	<div class="e-r-menu"></div>
+	<!-- news内容  -->
+		<h3 class="nebt">帝豪娱乐会所</h3>
+		<div class="main_visualt">
+	<div class="flicking_con">
+<a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a><a href="#">&nbsp;</a> 
+	</div>
+	<div class="main_imaget">
+		<ul>
+<li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP030.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP031.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP031-50.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP031-51.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP031-52.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP032.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP032-50.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP033.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP033-50.jpg" width=100%/></li><li><img src="/yiyuandesign/uploads/allimg/150808/1-150PQP034.jpg" width=100%/></li>
+		</ul>
+ 
+	</div>
+</div>
+	<div class="anli_xq_main">
+
+		<div>
+		    
+		</div>
+	</div>
+<div class="b_height"></div>
+<div class="lanmu">
+		<div class="over_lanmu">
+			<a href="/yiyuandesign/wap/index.html">首页</a>
+			<a href="tel:18363970080">电话</a>
+			<a href="sms:18363970080">短信</a>
+			<a href="/yiyuandesign/wap/about">关于怡元</a>
+		</div>
+	</div>
+</body>
+</html>

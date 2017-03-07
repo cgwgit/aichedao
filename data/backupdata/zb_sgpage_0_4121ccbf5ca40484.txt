@@ -1,0 +1,2 @@
+INSERT INTO `zb_sgpage` VALUES('1','¹«Ë¾¼ò½é','1','wap/about.html','','{style}/singlepage.htm','about','','1438912249','dfdf');
+INSERT INTO `zb_sgpage` VALUES('2','Ê×Ò³','0','wap.html','','{style}/singlepage.htm','default','','1438910325','');

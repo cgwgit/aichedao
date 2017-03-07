@@ -1,0 +1,1 @@
+INSERT INTO `zb_member_space` VALUES('1','10','0','admin888µÄ¿Õ¼ä','','person','','');

@@ -1,0 +1,1 @@
+INSERT INTO `zb_homepageset` VALUES('pc/index.htm','../index.html','1');

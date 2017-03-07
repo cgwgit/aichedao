@@ -1,0 +1,80 @@
+<!--底部链接-->
+<div class="footer">
+	<div class="ft cl"> 
+    	<div class="fnav cl">
+        	<a href="{dede:global.cfg_cmsurl/}/">首 页</a>
+        {dede:channel type='top' row='4'}
+      	<a href='[field:typeurl/]' >[field:typename/]</a>
+      	{/dede:channel}
+        </div>
+        <div class="erweima">
+            <img src="{dede:global.cfg_templets_skin/}/images/ewn.gif" />
+            <img src="{dede:global.cfg_templets_skin/}/images/gz.gif" />
+        </div>
+        <div class="y_lxfs">
+            <ul class="cl">
+                <li><p><a href="{dede:global.cfg_cmsurl/}/about/contact" class="hover"><i class="iconfont"></i>联系我们</a></p></li>
+                <li><p><a href="http://wpa.qq.com/msgrd?v=3&uin=172082336&site=qq&menu=yes" target="_blank"><i class="iconfont"></i>联系QQ</a></p></li>
+                <li><p><a href="{dede:global.cfg_cmsurl/}/about"><i class="iconfont"></i>关于我们</a></p></li>
+            </ul>
+            <p class="zx">[设计咨询专线]<span>0532-6606766/66067888</span></p>
+        </div>
+        <div class="y_add">
+        	<h3><i class="iconfont"></i>联系我们</h3>
+            <p><i class="iconfont"></i>地址/ADD：青岛中央商务区CBD万达广场商务楼B座607-611</p>
+            <p><i class="iconfont"></i>电话/TELD：<span>0532-66067666   0532-66067888</span></p>
+            <p><i class="iconfont"></i>邮箱/MAILD：<span>qdyydesign@163.com</span></p>
+        </div>
+    </div>
+    <div class="ft banquan">版权所有：青岛怡元设计有限公司      </div>
+</div>
+<!--右侧浮动客服-->
+
+<script type="text/javascript">
+document.write("<link href='{dede:global.cfg_templets_skin/}/style/online.css' rel='stylesheet' type='text/css'>");
+</script>
+<div id="big_C" class="png oc_bg" style="z-index:9999;">
+<a class="btn btn1 png oc_bg" onclick="showSmall_C();" ></a>
+<a class="btn btn2 png oc_bg" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=172082336&site=qq&menu=yes"></a>
+<a class="btn btn3 png oc_bg" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=172082336&site=qq&menu=yes"></a>
+<a class="btn btn4 png oc_bg" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=172082336&site=qq&menu=yes"></a>
+<a class="btn btn5 png oc_bg"  href="#@"></a>
+
+<a class="btn btn6 png oc_bg" onclick="$(window).scrollTop(0);"></a>
+</div>
+<div id="small_C" class="png oc_bg" style="z-index:9999;">
+<a class="btn btn1 png oc_bg" onclick="$(window).scrollTop(0);"></a>
+<a class="stb btn" onclick="showBig_C();"></a>
+</div>
+<script type="text/javascript">
+$("#big_C .btn5").hover(function(){
+$("#big_C #wx").show();
+},function(){
+$("#big_C #wx").hide();
+});
+$('#small_C').hide();
+$(window).scroll(function(){
+if($(this).scrollTop()!=0){
+$("#big_C .btn6").show();
+$("#small_C .btn1").show();
+}else{
+$("#big_C .btn6").hide();
+$("#small_C .btn1").hide();
+}
+});
+function showBig_C(){
+  $('#small_C').hide(200);$('#big_C').show(200);
+}
+function showSmall_C(){
+  $('#big_C').hide(200);$('#small_C').show(200);
+}
+$("#big_C .btn2").click(function(){
+$("#iconDivMain1 img").eq(0).parent().parent().click();
+});
+$("#big_C .btn3").click(function(){
+$("#iconDivMain1 img").eq(2).parent().parent().click();
+});
+$("#big_C .btn4").click(function(){
+$("#iconDivMain1 img").eq(1).parent().parent().click();
+});
+</script>

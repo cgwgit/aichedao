@@ -1,0 +1,13 @@
+文章列表
+<a href="/">首页</a></li>
+        {dede:channel type='top' row='8' currentstyle="<li class='thisclass'><a href='~typelink~'>~typename~</a> </li>"}
+   <li><a href='[field:typelink/]' target="_blank">[field:typename/]</a> </li>
+      {/dede:channel}
+
+指定栏目：{dede:onetype typeid='1'}[field:typename /]{/dede:onetype}
+
+当前位置：{dede:field name='position'/}
+
+l列表文章: {dede:list pagesize='8'}{/dede:list}
+
+模板路径：{dede:field name='templeturl'/}

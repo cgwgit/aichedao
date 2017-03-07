@@ -1,0 +1,17 @@
+{dede:pagestyle maxwidth='800' pagepicnum='12' ddmaxwidth='200' row='3' col='4' value='2'/}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH117.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH117.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH118.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH118.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH118-50.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH118-50.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH119.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH119.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH120.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH120.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH121.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH121.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH122.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH122.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH123.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH123.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH124.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH124.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH124-50.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH124-50.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH125.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH125.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH125-50.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH125-50.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH126.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH126.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH126-50.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH126-50.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH127.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH127.jpg {/dede:img}
+{dede:img ddimg='/yiyuandesign/uploads/allimg/150808/1-150PQH128.jpg' text='' width='806' height='675'} /yiyuandesign/uploads/allimg/150808/1-150PQH128.jpg {/dede:img}

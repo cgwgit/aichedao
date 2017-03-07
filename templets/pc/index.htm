@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>青岛爱车岛汽车服务有限公司-【官网】</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="{dede:global.cfg_templets_skin/}/style/main.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/laydate/laydate.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+{dede:include filename="nav.htm"/}
+<!--banner开始-->
+<div id="banner"></div>
+<!--首页内容开始-->
+<div id="i_phone">24小时服务热线：<span>0532-66089111</span></div>
+<div id="i_artide">
+	<ul id="i_sb">
+    	<li class="cx">100+车型</li>
+        <li class="fw">100%服务</li>
+        <li class="bx">100%保险</li>
+        <li class="lc">无限里程</li>
+    </ul>
+	<div id="i_yy">
+    	<img src="{dede:global.cfg_templets_skin/}/images/acd01_27.jpg" width=100%/> 
+        <ul>
+        	<li><span>取车时间</span><input type="text" class="laydate-icon" id="start"  placeholder="点击填写时间" /></li>
+            <li><span>还车时间</span><input type="text" class="laydate-icon" id="end"  placeholder="点击填写时间"  /></li>
+        </ul>
+    </div>
+</div>
+<script>
+var start = {
+    elem: '#start',
+    format: 'YYYY/MM/DD hh:mm:ss',
+    min: laydate.now(), //设定最小日期为当前日期
+    max: '2099-06-16', //最大日期
+    istime: true,
+    istoday: true,
+    choose: function(datas){
+         end.min = datas; //开始日选好后，重置结束日的最小日期
+         end.start = datas //将结束日的初始值设定为开始日
+    }
+};
+var end = {
+    elem: '#end',
+    format: 'YYYY/MM/DD hh:mm:ss',
+    min: laydate.now(),
+    max: '2099-06-16',
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+        start.max = datas; //结束日选好后，重置开始日的最大日期
+    }
+};
+laydate(start);
+laydate(end);
+</script>
+<div id="section">
+	<H3>热门车型</H3>
+	<div class="slideTxtBox">			
+		
+			<div class="hd">
+                             
+				<span class="arrow"><a class="next"></a><a class="prev"></a></span>
+
+                               <ul>
+                          {dede:channelartlist row=6 typeid="59"}
+                                  <li> {dede:field name='typename'/}</li>
+                           {/dede:channelartlist}
+                               </ul>
+			</div>
+		
+			<div class="bd">
+                       
+				<ul>
+				 {dede:arclist typeid='60' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+			
+                               <ul>
+				 {dede:arclist typeid='61' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+                               <ul>
+				 {dede:arclist typeid='62' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+                                  <ul>
+				 {dede:arclist typeid='63' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+			
+                               <ul>
+				 {dede:arclist typeid='64' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+                               <ul>
+				 {dede:arclist typeid='65' row='6' titlelen="20"}
+					<li><a href="#@"><img src="[field:picname/]"/><br />[field:title /]<span>[field:infos /]</span></a></li>
+                                  {/dede:arclist}
+				</ul>
+				
+                          
+			</div>
+  
+              
+	</div>
+	<!-- <script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click",easing:"easeOutCirc",delayTime:0});</script>-->
+<script type="text/javascript">jQuery(".slideTxtBox").slide({});</script>
+    <div class="i_pp">
+    	<ul>
+        	<li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_39.jpg" width=75 height=58/><br />玛莎拉蒂</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_41.jpg" width=75 height=58/><br />雪佛兰</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_43.jpg" width=75 height=58/><br />大众</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_45.jpg" width=75 height=58/><br />奥迪</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_47.jpg" width=75 height=58/><br />现代</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_49.jpg" width=75 height=58/><br />起亚</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_51.jpg" width=75 height=58/><br />别克</a></li>
+            <li><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_53.jpg" width=75 height=58/><br />宝马</a></li>
+            <li class="lgd"><a href="#@"><img src="{dede:global.cfg_templets_skin/}/images/acd01_56.jpg" class="gd"/></a></li>
+        </ul>
+        <div class="c"></div>
+        <div class="i_qs">
+        	
+        </div>
+    </div>  
+    <div class="i_lx">
+        	<ul>
+            	<li class="lone"><h4>在线预约</h4><span>联系人</span><p>0532-66089111</p></li>
+                <li class="lfour"><h4>联合营销</h4><span>联系人</span><p>qdaichedao@163.com</p></li>
+                <li class="ltwo"><h4>加入我们</h4><span>联系人</span><p>0532-87662567</p></li>
+                <li class="lthree"><h4>市场合作</h4><span>联系人</span><p>qdaichedao@163.com</p></li>
+                <li class="lfive"><h4>客户服务</h4><span>联系人</span><p>0532-66089111</p></li>
+                <li class="lsex"><h4>媒体联系</h4><span>联系人</span><p>0532-87662567</p></li>
+            </ul>
+        </div>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

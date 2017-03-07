@@ -1,0 +1,10 @@
+INSERT INTO `zb_uploads` VALUES('1','1','ceshi','/yiyuan/uploads/150807/1-150PF914363T.jpg','1','379','244','0','50469','1438910076','1');
+INSERT INTO `zb_uploads` VALUES('2','7','≤‚ ‘','/yiyuan/uploads/allimg/150807/1-150PG04538.jpg','0','0','0','0','47554','1438915538','1');
+INSERT INTO `zb_uploads` VALUES('3','7','≤‚ ‘','/yiyuan/uploads/allimg/150807/1-150PG04538-50.jpg','0','0','0','0','79766','1438915538','1');
+INSERT INTO `zb_uploads` VALUES('4','7','≤‚ ‘','/yiyuan/uploads/allimg/150807/1-150PG04539.jpg','0','0','0','0','82226','1438915539','1');
+INSERT INTO `zb_uploads` VALUES('5','7','≤‚ ‘','/yiyuan/uploads/allimg/150807/1-150PG04539-50.jpg','0','0','0','0','50469','1438915539','1');
+INSERT INTO `zb_uploads` VALUES('6','7','≤‚ ‘','/yiyuan/uploads/allimg/150807/1-150PG04538-lp.jpg','1','0','0','0','11425','1438915551','1');
+INSERT INTO `zb_uploads` VALUES('7','8','ceshi','/yiyuan/uploads/allimg/150807/1-150PG60A2.jpg','0','0','0','0','47554','1438934812','1');
+INSERT INTO `zb_uploads` VALUES('8','8','ceshi','/yiyuan/uploads/allimg/150807/1-150PG60A2-50.jpg','0','0','0','0','79766','1438934812','1');
+INSERT INTO `zb_uploads` VALUES('9','8','ceshi','/yiyuan/uploads/allimg/150807/1-150PG60A2-51.jpg','0','0','0','0','82226','1438934812','1');
+INSERT INTO `zb_uploads` VALUES('10','8','ceshi','/yiyuan/uploads/allimg/150807/1-150PG60A2-52.jpg','0','0','0','0','50469','1438934812','1');

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_cmsurl/}/favicon.ico" rel="shortcut icon" />
+<link href="{dede:global.cfg_templets_skin/}/style/main.css" type="text/css" rel="stylesheet" />
+<link href="{dede:global.cfg_templets_skin/}/style/top.css" type="text/css" rel="stylesheet" />
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+{dede:include filename="head2.htm"/}
+<div class="content">
+	<div class="lm">
+    	{dede:channelartlist row=5 typeid="16,17,18,19,20"}
+        <a href='{dede:field name='typeurl'/}' >{dede:field name='typename'/}</a>
+        {/dede:channelartlist}
+    </div>
+	<div class="y_n_l">
+    	<ul>
+        	{dede:include filename="left.htm"/}
+            <li><a href="{dede:global.cfg_cmsurl/}/about/contact">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="y_n_r">
+    	<div class="y_wz" id="y_wzdc">
+        	{dede:field name='position'/}
+        </div>
+        <div class="mod18Box">
+        	<h1>{dede:field.title/}</h1>
+            <div class="mod18">
+                <span id="prev" class="btn prev"></span>
+                <span id="next" class="btn next"></span>
+                <span id="prevTop" class="btn prev"></span>
+                <span id="nextTop" class="btn next"></span>
+                <div id="picBox" class="picBox">
+                    <ul class="cf">
+                    	{dede:productimagelist}
+                        <li><img src="[field:imgsrc/]" alt="[field:text/]" /></li>
+                        {/dede:productimagelist}
+                    </ul>
+                </div>
+                
+                <div id="listBox" class="listBox">
+                    <ul class="cf">
+                        {dede:productimagelist}
+                        <li><i class="arr2"></i><img src="[field:imgsrc/]" alt="[field:text/]" /></li>
+                        {/dede:productimagelist}
+                    </ul>
+                </div>
+            </div>
+            <div class="box">{dede:field.body/}</div>
+            <div class="page"><span>{dede:prenext get='pre'/}</span> <span>{dede:prenext get='next'/}</span></div>
+            <div class="return"><a href="javascript:history.back(-1)">返 回</a></div>
+        </div>
+    </div>
+    <div class="c"></div>
+</div>
+<script type="text/javascript">
+<!--
+(function(){
+	function G(s){
+		return document.getElementById(s);
+	}
+	
+	function getStyle(obj, attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr];
+		}else{
+			return getComputedStyle(obj, false)[attr];
+		}
+	}
+	
+	function Animate(obj, json){
+		if(obj.timer){
+			clearInterval(obj.timer);
+		}
+		obj.timer = setInterval(function(){
+			for(var attr in json){
+				var iCur = parseInt(getStyle(obj, attr));
+				iCur = iCur ? iCur : 0;
+				var iSpeed = (json[attr] - iCur) / 5;
+				iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+				obj.style[attr] = iCur + iSpeed + 'px';
+				if(iCur == json[attr]){
+					clearInterval(obj.timer);
+				}
+			}
+		}, 30);
+	}
+
+	var oPic = G("picBox");
+	var oList = G("listBox");
+	
+	var oPrev = G("prev");
+	var oNext = G("next");
+	var oPrevTop = G("prevTop");
+	var oNextTop = G("nextTop");
+
+	var oPicLi = oPic.getElementsByTagName("li");
+	var oListLi = oList.getElementsByTagName("li");
+	var len1 = oPicLi.length;
+	var len2 = oListLi.length;
+	
+	var oPicUl = oPic.getElementsByTagName("ul")[0];
+	var oListUl = oList.getElementsByTagName("ul")[0];
+	var w1 = oPicLi[0].offsetWidth;
+	var w2 = oListLi[0].offsetWidth;
+
+	oPicUl.style.width = w1 * len1 + "px";
+	oListUl.style.width = w2 * len2 + "px";
+
+	var index = 0;
+	
+	var num = 5;
+	var num2 = Math.ceil(num / 2);
+
+	function Change(){
+
+		Animate(oPicUl, {left: - index * w1});
+		
+		if(index < num2){
+			Animate(oListUl, {left: 0});
+		}else if(index + num2 <= len2){
+			Animate(oListUl, {left: - (index - num2 + 1) * w2});
+		}else{
+			Animate(oListUl, {left: - (len2 - num) * w2});
+		}
+
+		for (var i = 0; i < len2; i++) {
+			oListLi[i].className = "";
+			if(i == index){
+				oListLi[i].className = "on";
+			}
+		}
+	}
+	
+	oNextTop.onclick = oNext.onclick = function(){
+		index ++;
+		index = index == len2 ? 0 : index;
+		Change();
+	}
+
+	oPrevTop.onclick = oPrev.onclick = function(){
+		index --;
+		index = index == -1 ? len2 -1 : index;
+		Change();
+	}
+
+	for (var i = 0; i < len2; i++) {
+		oListLi[i].index = i;
+		oListLi[i].onclick = function(){
+			index = this.index;
+			Change();
+		}
+	}
+	
+})()
+//-->
+</script>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+
+</body>
+</html>

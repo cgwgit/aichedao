@@ -1,0 +1,241 @@
+﻿#dl_box{
+	width:940px;
+	height:375px;
+	margin:95px auto;
+	}
+#dl_box img{
+	float:left;
+	}
+#dlk{
+	width:333px;
+	height:375px;
+	background:#f2f2f2;
+	float:right;
+	padding-left:17px;
+	font-size:14px;
+	}
+#dlk h3{
+	line-height:54px;
+	font-size:20px;
+	color:#333;
+	}
+#dlk .yh{
+	width:252px;
+	line-height:55px;
+	margin-bottom:25px;
+	padding-left:72px;
+	font-size:14px;
+	background:#fff url(../images/dl_06.jpg) 17px center no-repeat;
+	border:0;
+	}
+#dlk .mm{
+	width:252px;
+	line-height:55px;
+	padding-left:72px;
+	font-size:14px;
+	background:#fff url(../images/dl_10.jpg) 17px center no-repeat;
+	margin-bottom:20px;
+	border:0;
+	}
+#dlk .dltj{
+	margin-top:20px;
+	}
+#dlk .fx{float:left;}
+#dlk .wj{
+	display:block;
+	width:300px;
+	margin-top:-2px;
+	float:left;
+	padding-left:5px;
+	color:#0077bc;
+	}
+#dlk .wj a{
+	float:right;
+	color:#0077bc;
+	}
+#dlk .zc{
+	display:block;
+	line-height:50px;
+	font-size:14px;
+	}
+#dlk .zc a{
+	color:#0077bc;
+	}
+	
+/*注册*/
+#zc_box{
+	width:840px;
+	margin:50px auto;
+	font-size:14px;
+	}
+#zc_box h3{
+	font-size:22px;
+	font-weight:normal;
+	color:#323232;
+	}
+#zc_box dt{
+	float:left;
+	width:115px;
+	margin-top:30px;
+	text-align:right;
+	}
+#zc_box dd{
+	float:left;
+	margin-left:15px;
+	margin-top:30px;
+	}
+#zc_box input{
+	line-height:22px;
+	background:#cdcdcd;
+	border:1px solid #cdcdcd;
+	border-radius:3px;
+	}
+#zc_box .zcipt{width:297px;}
+#zc_box dl span{
+	display:block;
+	float:left;
+	width:100px;
+	height:28px;
+	background:#ff9701;
+	margin-top:5px;
+	margin-left:40px;
+	}
+#zc_box dd a{
+	float:left;
+	padding-left:10px;
+	}
+#zc_box dd .kbq{padding-top:10px;}
+#zc_box dd .sbd{font-size:12px;line-height:24px;color:#006fb6;}
+#zc_box .xb{
+	border-top:1px dashed #868686;
+	margin-top:20px;
+	}
+#zc_box .xm{width:220px;}
+#zc_box label{margin-left:20px;}
+#zc_box .zctj{background:#ee4136;width:188px;border:1px solid #ee4136;color:#FFF;}
+.xieyi{
+	width:400px;
+	height:150px;
+	margin-top:30px;
+	overflow:auto;
+	font-size:14px;
+	color:#000;
+	margin-left:130px;
+	line-height:20px;
+	padding:0 10px;
+	border:1px solid #CCC;
+	}
+	
+/*最新订单*/
+.zuixin{
+	display:block;
+	line-height:50px;
+	font-size:16px;
+	border-bottom:1px solid #333;
+	}
+#dengdai{
+	width:587px;
+	float:right;
+	margin-top:28px;
+	border-bottom:4px solid #1158a6;
+
+	}
+#dengdai li{
+	float:left;
+	width:92px;
+	text-align:center;
+	margin-right:7px;
+	line-height:31px;
+	background:url(../images/dd_03.gif) no-repeat;
+	}
+#dengdai li.on{background:url(../images/dd_031.gif) no-repeat;color:#fff;}
+#dengdai li.on a{color:#fff;}
+#dingdan .ddhead{
+	line-height:38px;
+	}
+#zc_right table{margin-top:10px;}
+#zc_right .trh{line-height:32px;border:0;}
+#zc_right table td,table{
+	border:0;
+	}
+.xiugai{margin-top:20px;}
+.xiugai span{
+	display:block;
+	width:68px;
+	float:left;
+	height:40px;
+	text-align:right;
+	}
+.xiugai input{float:left;width:190px;}
+.xiugai .baocun{
+	width:170px;
+	line-height:26px;
+	border:1px solid #ee4136;
+	border-radius:3px;
+	background:#ee4136;
+	margin-left:69px;
+	color:#fff;
+	}
+	
+/*我的资料*/
+
+.z_top{
+	width:704px;
+	color:#333;
+	font-size:14px;
+	line-height:45px;
+	border-bottom:1px solid #989898;
+}
+
+.z_bott{
+	height:310px;
+	font-size:16px;	
+	
+}
+.touxiang{
+	width:186px;
+	height:40px;
+	margin-top:20px;
+	padding-top:196px;
+	float:left;
+	background:#000;
+	
+}
+.touxiang .shangchuan{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:#1258a8;
+	color:#fff;
+	position:relative;
+	bottom:0;
+	}
+.z_bott .submit{
+	height:310px;
+	float:left;
+	padding-left:20px;
+	color:#4d4d4d;
+}
+.submit div{height:50px;}
+.z_bott .submit .pl{padding-left:30px;}
+.z_bott .submit input{
+	border:0;
+	height:26px;
+	line-height:26px;
+	border-radius:5px;
+	outline:none;
+	margin-top:10px;
+	
+ }
+
+.z_bott .submit .s1{margin-left:120px;}
+.z_bott .submit .name1{
+	width:255px;
+background:#e6e6e6;	
+}
+.woman{margin-left:20px;}
+.z_bott .submit .date{
+	width:65px;
+	margin-right:28px;
+	background:#e6e6e6;	
+}

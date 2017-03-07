@@ -1,0 +1,1 @@
+<li><i class="arr2"></i><img src="[field:imgsrc/]" alt="[field:text/]" /></li>

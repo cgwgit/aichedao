@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",236,264);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("field","",277,296);
+$z[1][4]['name']="title";
+$z[2]=Array("global","",297,323);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("global","",367,397);
+$z[3][4]['name']="cfg_description";
+$z[4]=Array("global","",434,461);
+$z[4][4]['name']="cfg_keywords";
+$z[5]=Array("global","",789,821);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("global","",888,920);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",989,1021);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",1121,1153);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("include","",1193,1228);
+$z[9][4]['filename']="head.htm";
+$z[10]=Array("global","",1288,1320);
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("channelartlist","\r\n      	<li><a href='{dede:field name='typeurl'/}' [field:rel/]>{dede:field name='typename'/}</a></li>\r\n      	",1489,1674);
+$z[11][4]['row']="5";
+$z[11][4]['typeid']="29,30,31,32,33";
+$z[12]=Array("global","",1769,1801);
+$z[12][4]['name']="cfg_templets_skin";
+$z[13]=Array("global","",2535,2567);
+$z[13][4]['name']="cfg_templets_skin";
+$z[14]=Array("channel","\r\n		<li><a href=\"[field:typeurl/]\" class=\"hover[field:global.autoindex/]\">[field:typename/]</a></li>\r\n        ",2668,2896);
+$z[14][4]['typeid']="19";
+$z[14][4]['row']="6";
+$z[14][4]['currentstyle']="<a href='~typelink~' ~rel~ class='cur'>~typename~</a>";
+$z[15]=Array("arclist","\r\n			<li>\r\n				<a href=\"[field:arcurl/]\"><img src=\"[field:picname/]\" /></a>\r\n				<div class=\"gray\">\r\n					<p>[field:title/]</p>\r\n				</div>\r\n			</li>\r\n            ",2966,3192);
+$z[15][4]['typeid']="9";
+$z[15][4]['row']="10";
+$z[15][4]['titlelen']="30";
+$z[16]=Array("global","",3247,3272);
+$z[16][4]['name']="cfg_cmsurl";
+$z[17]=Array("include","",3342,3379);
+$z[17][4]['filename']="footer.htm";
+
+?>

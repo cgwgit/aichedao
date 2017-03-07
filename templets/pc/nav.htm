@@ -1,0 +1,22 @@
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.10.1.min.js"></script>
+<!--头部开始-->
+<div id="header">
+    <div class="hd">
+                <span class="toplink"> <a href="javascript:window.external.AddFavorite(location,document.title)">收藏本站</a> | <a href="/index.html#thisliuyan">联系我们</a> </span><span class="hy">欢迎来到爱车岛官方网站！</span>
+    </div>
+	<div class="top">
+       	<div class="logo">
+        	<h1><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/logo.jpg"></a></h1>
+        </div>
+        <!--导航-->
+        <ul id="nav">
+        {dede:channel type='top' row='6' currentstyle="<li class='hover'><a href='~typelink~' ~rel~>~typename~</a></li>"}
+      	<li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+      	{/dede:channel}	
+
+    	</ul>
+        
+        <div class="c"></div>
+    </div>
+</div>
+<!--头部结束-->
